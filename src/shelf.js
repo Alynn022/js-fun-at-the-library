@@ -35,9 +35,22 @@ function listTitles(otherShelf) {
   // var str = otherShelf.join();// "{...},{...},{...}"
 };
 
+
+
+function searchShelf(shelf, title) {
+  for(var i = 0; i < shelf.length; i++) {
+    var titlePos = shelf[i].title;
+}
+  if(title === titlePos) {
+    return true
+  } else {
+    return false
+  }
+};
+
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
